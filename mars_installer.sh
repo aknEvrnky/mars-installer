@@ -37,14 +37,18 @@ if [ $? -ne 0 ]; then
 fi
 
 
-# Create a MARS initializer file in /usr/local/bin
+# Create a MARS initializer file in /usr/local/bin. need sudo to write to /usr/local/bin
 echo "Creating MARS initializer file..."
-echo '#!/bin/bash' > sudo /usr/local/bin/mars
-echo 'nohup java -jar /Applications/Mars.jar >/dev/null 2>&1 &' >> sudo /usr/local/bin/mars
+sudo touch /usr/local/bin/mars
 if [ $? -ne 0 ]; then
   echo "Error: Failed to create MARS initializer file."
   exit 1
 fi
+
+# Write the MARS initializer file
+echo "Writing MARS initializer file..."
+sudo sh -c 'echo "#!/bin/bash" > /usr/local/bin/mars'
+sudo sh -c 'echo "nohup java -jar /Applications/Mars.jar >/dev/null 2>&1 &" >> /usr/local/bin/mars'
 
 # Make MARS executable
 echo "Making MARS executable..."
@@ -55,3 +59,5 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "MARS simulator installed successfully."
+
+echo 'open a new terminal and type "mars" to run MARS.'
