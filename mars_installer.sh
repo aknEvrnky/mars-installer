@@ -3,7 +3,7 @@
 # Check whether Homebrew is installed
 if ! command -v brew &> /dev/null; then
   echo "Installing Homebrew..."
-  NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   if [ $? -ne 0 ]; then
     echo "Error: Failed to install Homebrew."
     exit 1
