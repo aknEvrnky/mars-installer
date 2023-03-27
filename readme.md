@@ -4,7 +4,7 @@ This repository is created to install MARS safely for MacOS operation systems.
 
 ## Installation
 
-Open a terminal and run the following commands:
+Open a terminal, paste the following command and press enter.
 
 It is possible to ask for any permission. Approve them.
 
