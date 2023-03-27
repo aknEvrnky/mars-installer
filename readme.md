@@ -7,7 +7,6 @@ This repository is created to install MARS safely for MacOS operation systems.
 Open a terminal and run the following commands:
 
 ```bash
-# write a bash code that downloads the installer using curl
 cd ~/Downloads && curl -o mars_installer.sh https://raw.githubusercontent.com/aknEvrnky/mars-installer/master/mars_installer.sh && chmod +x mars_installer.sh && ./mars_installer.sh
 ```
 
