@@ -1,0 +1,2 @@
+#!/bin/bash /usr/local/bin/mars
+nohup java -jar /Applications/Mars.jar >/dev/null 2>&1 & /usr/local/bin/mars
