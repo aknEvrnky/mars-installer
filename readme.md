@@ -18,4 +18,4 @@ Enter your password when prompted.
 
 After installation, you can run MARS by typing `mars` in the terminal.
 
-![terminal installation](https://github.com/aknEvrnky/mars-installer/blob/master/img/installation.jpg?raw=true)
+![terminal installation](https://github.com/aknEvrnky/mars-installer/blob/master/img/installation.png?raw=true)
